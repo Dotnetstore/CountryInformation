@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInformation", "src\CountryInformation\CountryInformation.csproj", "{3BD6C880-0DA8-4346-9CF6-B6C2D1918DB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{165C2563-9604-4412-BA6C-699D44B1BDA9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3EDF4EFA-6232-4FF2-80A1-C256974DC704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountryInformation.Tests", "tests\CountryInformation.Tests\CountryInformation.Tests.csproj", "{93905B03-EDBD-4D7E-87F5-DACDC594283D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3BD6C880-0DA8-4346-9CF6-B6C2D1918DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BD6C880-0DA8-4346-9CF6-B6C2D1918DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BD6C880-0DA8-4346-9CF6-B6C2D1918DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BD6C880-0DA8-4346-9CF6-B6C2D1918DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93905B03-EDBD-4D7E-87F5-DACDC594283D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93905B03-EDBD-4D7E-87F5-DACDC594283D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93905B03-EDBD-4D7E-87F5-DACDC594283D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93905B03-EDBD-4D7E-87F5-DACDC594283D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3BD6C880-0DA8-4346-9CF6-B6C2D1918DB9} = {165C2563-9604-4412-BA6C-699D44B1BDA9}
+		{93905B03-EDBD-4D7E-87F5-DACDC594283D} = {3EDF4EFA-6232-4FF2-80A1-C256974DC704}
+	EndGlobalSection
+EndGlobal
