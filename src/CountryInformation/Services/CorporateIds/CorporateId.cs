@@ -1,4 +1,5 @@
 ﻿using CountryInformation.Exceptions;
+using CountryValidation;
 
 namespace CountryInformation.Services.CorporateIds;
 
@@ -24,12 +25,28 @@ public record struct CorporateId
             return new CorporateId(swedishCorporateId.VatNumber);
         }
 
-        if (GBCorporateId.Valid(id))
+        var validator = new CountryValidator();
+
+        var result = validator.ValidateVAT(id, Country.GB);
+        if (result.IsValid)
         {
             return new CorporateId(id);
         }
-        
-        if(GermanCorporateId.Valid(id))
+
+        result = validator.ValidateVAT(id, Country.DE);
+        if(result.IsValid)
+        {
+            return new CorporateId(id);
+        }
+
+        result = validator.ValidateVAT(id, Country.NL);
+        if(result.IsValid)
+        {
+            return new CorporateId(id);
+        }
+
+        result = validator.ValidateVAT(id, Country.DK);
+        if(result.IsValid)
         {
             return new CorporateId(id);
         }
