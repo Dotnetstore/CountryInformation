@@ -28,6 +28,11 @@ public record struct CorporateId
         {
             return new CorporateId(id);
         }
+        
+        if(GermanCorporateId.Valid(id))
+        {
+            return new CorporateId(id);
+        }
 
         throw new CorporateIdException("Invalid corporate id");
     }

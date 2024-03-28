@@ -12,6 +12,8 @@ public class CorporateIdTests
     [InlineData("GB 815382334", "GB 815382334")]
     [InlineData("GB815382334", "GB815382334")]
     [InlineData("815382334", "815382334")]
+    [InlineData("DE 136,695 976", "DE 136,695 976")]
+    [InlineData("DE136695976", "DE136695976")]
     public void Should_return_expected_value(string corporateId, string expected)
     {
         var result = CorporateId.Create(corporateId);
@@ -39,6 +41,8 @@ public class CorporateIdTests
     [InlineData("YHUWOCNYEX")]
     [InlineData("GH 815382334")]
     [InlineData("GB 81H382334")]
+    [InlineData("DE036695976")]
+    [InlineData("DE13669597H")]
     public void Should_throw_exception(string corporateId)
     {
         var action = () => CorporateId.Create(corporateId);
